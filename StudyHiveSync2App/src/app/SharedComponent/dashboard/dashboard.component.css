@@ -1,0 +1,55 @@
+.bg-dark {
+    background-color: #000000 !important;
+  }
+body {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .profile-container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .aqua-text {
+    color: #00ffff; /* Aquaish color */
+}
+  
+  .profile-card, .delete-card {
+    background-color: #3c4457;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  .text-light {
+    color: white !important;
+  }
+  
+  .edit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-content input, .modal-content textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }

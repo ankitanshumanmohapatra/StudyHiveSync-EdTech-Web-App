@@ -1,0 +1,56 @@
+.bg-dark {
+    background-color: #000000 !important;
+  }
+  .aqua-text {
+    color: #00ffff; /* Aquaish color */
+}
+  
+  .text-warning {
+    color: #ffc107 !important;
+  }
+  
+  .text-info {
+    color: #0dcaf0 !important;
+
+  }
+  
+  .btn-warning {
+    background-color: #ff8307;
+    border-color: #ff8307;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    box-shadow: 5px 5px 8px rgba(0, 255, 255, 0.7);
+    margin-top: 10px; /* Increase this value to increase top height */
+    margin-bottom: +50px;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* box-shadow: 4px 0 8px rgba(0, 255, 255, 0.5), -4px 0 8px rgba(0, 255, 255, 0); */
+    box-shadow: 10px 10px 16px rgba(0, 255, 255, 0.3);
+  }
+
+  .vision-heading,
+.mission-heading {
+  margin-right: 10px; /* Adjust this value to increase the gap between heading and paragraph */
+}
+
+.vision-text,
+.mission-text {
+  margin-right: 30px; /* Adjust this value to increase the gap between heading and paragraph */
+}
+
+.offerings-text {
+    margin-right: 20px;;
+    margin-bottom: 20px; /* Adjust this value to increase the gap between paragraphs */
+  }

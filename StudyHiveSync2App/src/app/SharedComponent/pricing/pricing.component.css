@@ -1,0 +1,74 @@
+.bg-dark {
+    background-color: #000000 !important;
+}
+.pricing-card {
+    background-color: #1c2526;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+
+    .course-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+  
+  .pricing-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .plan-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a0dad; /* Purple color from the image */
+  }
+  .text-span{
+    color: #6a0dad;
+  }
+  
+  .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .access-type {
+    font-size: 0.9rem;
+  }
+  
+  .benefit {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefit::before {
+    content: "✔ ";
+    color: #6a0dad; /* Purple checkmark */
+  }
+  
+  .btn-custom {
+    background-color: #6a0dad; /* Purple background */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #5a09a0; /* Darker purple on hover */
+  }
+  
+  .join-btn {
+    background-color: #6a0dad;
+  }
+  
+  .enroll-btn {
+    background-color: #6a0dad;
+  }
+  
+  hr {
+    border-top: 1px solid #2a3439;
+  }

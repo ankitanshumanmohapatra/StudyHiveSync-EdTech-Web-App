@@ -1,0 +1,7 @@
+.bg-dark {
+    background-color: #000000 !important;
+  }
+  .text-warning {
+    color: #ffc107 !important;
+    /* text-align: center; */
+  }

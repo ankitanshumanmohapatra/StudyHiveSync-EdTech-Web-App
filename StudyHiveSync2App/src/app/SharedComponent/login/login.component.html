@@ -1,0 +1,25 @@
+<div class="login-container">
+    <div class="form-overlay">
+      <form class="login-form" (ngSubmit)="onLogin()">
+        <h2 class="form-title">Sign In</h2>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="accountType">Account Type</label>
+          <select id="accountType" name="accountType" [(ngModel)]="accountType" required>
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-signin">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>

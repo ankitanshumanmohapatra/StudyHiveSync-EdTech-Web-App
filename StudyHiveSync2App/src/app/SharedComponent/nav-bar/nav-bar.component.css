@@ -1,0 +1,159 @@
+
+.navbar {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    color: #fff;
+    position: relative;
+  }
+  
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 20px;
+    height: auto;
+    background-color: #fff;
+    color: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a.active {
+    color: #ffcc00; 
+  }
+  
+  .nav-links a:hover {
+    color: #00cccc; 
+  }
+  .dashboard-link {
+    display: flex;
+    align-items: center;
+    color: #d3d3d3; /* Light gray text to match the sidebar */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboard-link:hover {
+    color: #ffffff; /* White text on hover */
+  }
+  
+  .dashboard-icon {
+    width: 40px; /* Adjust size to match the sidebar icon */
+    height: 40px;
+    margin-right: 8px; /* Space between icon and text */
+    border-radius: 50%; /* Make the icon circular like in the sidebar */
+  }
+  .dropdown-icon {
+    font-size: 10px;
+    vertical-align: middle;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    min-width: 200px;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 5px 20px;
+    color: #fff;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #2c3e50;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-login, .btn-signup {
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-login:hover, .btn-signup:hover {
+    background-color: #34495e;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+    .nav-links {
+      flex-direction: column;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .nav-links li {
+      margin: 5px 0;
+    }
+    .auth-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+    .dropdown-menu {
+      position: static;
+      display: none;
+      width: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+}

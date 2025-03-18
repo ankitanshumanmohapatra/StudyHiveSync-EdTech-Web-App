@@ -1,0 +1,376 @@
+<!--Main Navigation-->
+<header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+  
+      .carousel-item:nth-child(1) {
+        background-image: url('https://plus.unsplash.com/premium_photo-1661692880479-28d193bed573?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      /* .carousel-item:nth-child(2) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      .carousel-item:nth-child(3) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      } */
+  
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -01.59px;  /*original was -58.59px */ 
+        }
+        #introCarousel,
+        .carousel-inner,
+        .carousel-item,
+        .carousel-item.active {
+          height: 50vh;
+        }
+      }
+  
+      /* .navbar .nav-link {
+        color: #fff !important;
+      } */
+    </style>
+  
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+  
+        <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+          <strong>MDB</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                 target="_blank">Learn Bootstrap 5</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://mdbootstrap.com/docs/standard/" target="_blank">Download MDB UI KIT</a>
+            </li>
+          </ul>
+  
+          <ul class="navbar-nav d-flex flex-row">
+  
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                 target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- Navbar -->
+  
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-carousel-init>
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <!-- <li data-mdb-target="#introCarousel" data-mdb-slide-to="1" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2" class="active"></li> -->
+      </div>
+  
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center" style="height: 500px;">
+              <div class="text-white text-center" data-mdb-theme="dark">
+                <h1 class="mb-3">Empower Your Future with Coding Skills</h1>
+                <h5 class="mb-4">Learn to Build Anything You Can Imagine</h5>
+                <a
+                   class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
+                   href="/about-us"           
+                   role="button"
+                   >Learn More!</a
+                  >
+                <a
+                   class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
+                   href="/category"
+                   role="button"
+                   >Explore Now!</a
+                  >
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single item -->
+        <!-- <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>You can write here anything</h2>
+              </div>
+            </div>
+          </div>
+        </div> -->
+  
+        <!-- Single item -->
+        <!-- <div class="carousel-item">
+          <div
+               class="mask"
+               style="
+                      background: linear-gradient(
+                      45deg,
+                      rgba(29, 236, 197, 0.7),
+                      rgba(91, 14, 214, 0.7) 100%
+                      );
+                      "
+               >
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center" data-mdb-theme="dark">
+                <h2>And cover it with any mask</h2>
+                <a
+                   class="btn btn-outline-light btn-lg m-2" data-mdb-ripple-init
+                   href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                   target="_blank"
+                   role="button"
+                   >Learn about masks</a
+                  >
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <!-- Inner -->
+  
+      <!-- Controls -->
+      <!-- <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+  
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay shadow-2-strong" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="https://studynotion-frontend.vercel.app/static/media/Instructor.8b4c4f204053f0dfe844.png" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+  
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Become an instructor!</strong></h4>
+            <p class="text-muted">
+              Becoming an instructor on StudyNotion allows you to share your knowledge and passion with a global audience. Whether you're an expert in technology, arts, business, or any other field, you have the opportunity to make a significant impact on students' lives. Teaching not only helps others grow but also enhances your own understanding and skills. By sharing your expertise, you can inspire and educate students from different parts of the world, fostering a community of learners who benefit from your unique insights and experiences. This platform provides a space where your passion for teaching can flourish, and you can contribute to the global exchange of knowledge.  
+            </p>
+            <h4><p><strong>How to Get Started?</strong></p></h4>
+            <p class="text-muted">
+              Getting started is easy. Simply sign up on our platform, complete your profile, and start creating your first course. We offer tutorials and resources to guide you through the process. Once your course is live, you can begin reaching students and making a difference. The process is designed to be user-friendly, ensuring that you can focus on creating high-quality content without worrying about technical details. With our support, you can confidently launch your teaching career on StudyNotion, knowing that you have the tools and guidance needed to succeed. As you engage with students and receive feedback, you'll continuously improve and refine your teaching methods, making a lasting impact on your learners.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+  
+      <hr class="my-5" />
+  
+      <!-- https://mdbootstrap.com/img/new/standard/nature/184.jpg -->
+  
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Driving Innovation in Online Education for a Brighter Future</strong></h4>
+  
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img
+                     src="https://studynotion-frontend.vercel.app/static/media/aboutus1.86606deea209badf5925.webp"
+                     class="img-fluid"
+                     />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Valentina</h5>
+                <p class="card-text">
+                  This course was amazing! The instructor explained everything clearly and made learning fun. I feel much more confident now. Highly recommend!
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Learn More!</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img
+                     src="https://studynotion-frontend.vercel.app/static/media/aboutus2.0a1cd797ce3a69e81830.webp"
+                     class="img-fluid"
+                     />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Carolina</h5>
+                <p class="card-text">
+                  Great course! The instructor was clear and engaging. I learned a lot and feel more confident in my skills. Definitely recommend!
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Learn More!</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img
+                     src="https://studynotion-frontend.vercel.app/static/media/aboutus3.f5cfba861877ea03735d.webp"
+                     class="img-fluid"
+                     />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Emilia</h5>
+                <p class="card-text">
+                  Fantastic course! The instructor made everything easy to understand. I feel more confident and ready to apply what I learned. Highly recommend
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Learn More!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--Main layout-->
+  <br><br>
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+      <a
+         role="button"
+         class="btn btn-primary btn-lg m-2" data-mdb-ripple-init
+         href="/about-us"
+         >
+        StudyHiveSync
+      </a>
+      <!-- <a
+         role="button"
+         class="btn btn-primary btn-lg m-2" data-mdb-ripple-init
+         href="https://mdbootstrap.com/docs/standard/"
+         target="_blank"
+         >
+        Download MDB UI KIT
+      </a> -->
+    </div>
+  
+    <hr class="m-0" />
+   
+    <div class="text-center py-4 align-items-center">
+      <p>Follow StudyHiveSync on social media</p>
+      <!-- <a
+         href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+         class="btn btn-primary m-1" data-mdb-ripple-init
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-youtube"></i>
+      </a> -->
+      <a href="https://www.youtube.com/@BetWiseStakeIndia" target="_blank" rel="nofollow">
+        <img src="https://cdn-icons-png.flaticon.com/256/2504/2504848.png" alt="YouTube" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.linkedin.com/in/ankit-anshuman-mohapatra-85442a1b8/" target="_blank" rel="nofollow">
+        <img src="https://banner2.cleanpng.com/20181227/ici/kisspng-logo-linkedin-computer-icons-portable-network-grap-1713909854703.webp" alt="LinkedIn" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://github.com/ankitanshumanmohapatra" target="_blank" rel="nofollow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 40px; height: 40px;">
+      </a>
+      <!-- <a
+         href="https://www.facebook.com/mdbootstrap"
+         class="btn btn-primary m-1" data-mdb-ripple-init
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+         href="https://twitter.com/MDBootstrap"
+         class="btn btn-primary m-1"
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+         href="https://github.com/mdbootstrap/mdb-ui-kit"
+         class="btn btn-primary m-1" data-mdb-ripple-init
+         role="button"
+         rel="nofollow"
+         target="_blank"
+         >
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-dark" href="www.google.com">StudyHiveSync</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  

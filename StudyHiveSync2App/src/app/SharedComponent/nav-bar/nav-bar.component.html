@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <div class="logo">
+      <img src=""  alt="Icon" class="navbar-icon">
+    </div>
+    <ul class="nav-links">
+      <li><a href="/home">Home</a></li>
+      <!-- <li class="dropdown" (mouseenter)="isDropdownOpen = true" (mouseleave)="isDropdownOpen = false">
+        <a routerLink="/category" aria-haspopup="true" [attr.aria-expanded]="isDropdownOpen">Catalog <span class="dropdown-icon">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/catalog/programming-languages">Programming Languages</a></li>
+          <li><a href="/catalog/web-development">Web Development</a></li>
+          <li><a href="/catalog/android-development">Android Development</a></li>
+          <li><a href="/catalog/data-science">Data Science</a></li>
+          <li><a href="/catalog/cloud-computing">Cloud Computing</a></li>
+          <li><a href="/catalog/devops">DevOps</a></li>
+          <li><a href="/catalog/cyber-security">Cyber Security</a></li>
+          <li><a href="/catalog/artificial-intelligence">Artificial Intelligence</a></li>
+        </ul>
+      </li> -->
+      <li><a href="/category">Category</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <!-- <li><a href="/dashboard" class="dashboard-link">Dashboard</a></li> -->
+    </ul>
+    <div class="auth-buttons">
+      <a href="/dashboard" class="dashboard-link"><img src="https://res.cloudinary.com/dbr73rpz9/image/upload/v1688817006/images/epgd4lpdt5bspvnpcvtt.png" alt="Dashboard Icon" class="dashboard-icon"></a>
+      <button class="btn-login" (click)="logout()">Log Out</button>
+    </div>
+  </nav>

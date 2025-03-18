@@ -1,0 +1,71 @@
+.bg-dark {
+    background-color: #000000 !important;
+  }
+  .text-mute {
+    color: black;
+}
+
+.course-card, .what-you-learn, .course-content, .course-sidebar {
+    background-color: #1c2526;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .course-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .course-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .rating {
+    color: #f1c40f;
+  }
+  
+  .instructor {
+    font-size: 1rem;
+    color: #b0b0b0;
+  }
+  
+  .created-date, .language {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+  }
+  
+  .course-sidebar {
+    position: sticky;
+    top: 20px;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .guarantee {
+    font-size: 0.9rem;
+  }
+  
+  .accordion-button {
+    background-color: #2a3439;
+    color: #ffffff;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #3a4449;
+  }
+  
+  .accordion-body {
+    background-color: #2a3439;
+    color: #ffffff;
+  }
+  
+  .list-group-item {
+    background-color: #2a3439;
+    color: #ffffff;
+    border: none;
+  }

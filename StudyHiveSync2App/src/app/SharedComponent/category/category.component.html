@@ -1,0 +1,155 @@
+  <div class="container-fluid bg-dark text-light py-5">
+    <div class="container py-5">
+      <div class="container text-center">
+          <!-- <h1 class="display-4 fw-bold">Explore Courses from StudyHiveSync!</h1> -->
+          <h1 class="custom-heading mb-4">Explore <span class="aqua-text">Courses</span> from <span class="aqua-text">StudyHiveSync</span>!</h1>
+          <p class="lead">
+              Discover a variety of courses to enhance your <span class="text-warning">Fundamentals</span> & <span class="text-warning">Coding Skills</span>
+          </p>
+        <br><br>
+        </div>
+        <hr>
+        <br><br>
+      <!-- Courses to Get You Started -->
+      <h2 class="mb-3">Programming Languages to get started</h2>
+      <!-- <ul class="nav nav-tabs mb-4" id="courseTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="most-popular-tab" data-bs-toggle="tab" data-bs-target="#most-popular" type="button" role="tab" aria-controls="most-popular" aria-selected="true">Most Popular</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="false">New</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="trending-tab" data-bs-toggle="tab" data-bs-target="#trending" type="button" role="tab" aria-controls="trending" aria-selected="false">Trending</button>
+        </li>
+      </ul> -->
+      <br>
+    
+      <!-- Tab Content -->
+      <div class="tab-content" id="courseTabsContent">
+        <!-- Most Popular Tab -->
+        <div class="tab-pane fade show active" id="most-popular" role="tabpanel" aria-labelledby="most-popular-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let course of programCourses">
+              <div class="card course-card">
+                <div class="position-relative">
+                  <img [src]="course.photo" class="card-img-top" alt="Course Image">
+                  <span class="bestseller-badge" *ngIf="course.isBestseller">Bestseller</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{ course.title }}</h5>
+                  <p class="card-text">{{ course.instructor }}</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="rating">{{ course.rating }} ★★★★★</span>
+                    <span class="text-muted ms-2">(Review Count)</span>
+                  </div>
+                  <p class="price">Rs. {{ course.price }}</p>
+                  <button class="btn btn-primary w-100" (click)="onCourseClick(course.id)">Enroll Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- New Tab -->
+        <div class="tab-pane fade" id="new" role="tabpanel" aria-labelledby="new-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Add more course cards here -->
+          </div>
+        </div>
+        <!-- Trending Tab -->
+        <div class="tab-pane fade" id="trending" role="tabpanel" aria-labelledby="trending-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Add more course cards here -->
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    <hr>
+      <!-- Top Courses in Python and Machine Learning -->
+      <h2 class="mt-5 mb-3">Top courses in Machine Learning & Analytics</h2>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let course of mlCourses">
+          <div class="card course-card">
+            <div class="position-relative">
+              <img [src]="course.photo" class="card-img-top" alt="Course Image">
+              <span class="bestseller-badge" *ngIf="course.isBestseller">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ course.title }}</h5>
+              <p class="card-text">{{ course.instructor }}</p>
+              <div class="d-flex align-items-center mb-2">
+                <span class="rating">{{ course.rating }} ★★★★★</span>
+                <span class="text-muted ms-2">(Review Count)</span>
+              </div>
+              <p class="price">Rs. {{ course.price }}</p>
+              <button class="btn btn-primary w-100">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <!-- Top Courses in Web Development -->
+      <h2 class="mt-5 mb-3">Master courses in Web Development</h2>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let course of webdevCourses">
+          <div class="card course-card">
+            <div class="position-relative">
+              <img [src]="course.photo" class="card-img-top" alt="Course Image">
+              <span class="bestseller-badge" *ngIf="course.isBestseller">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ course.title }}</h5>
+              <p class="card-text">{{ course.instructor }}</p>
+              <div class="d-flex align-items-center mb-2">
+                <span class="rating">{{ course.rating }} ★★★★★</span>
+                <span class="text-muted ms-2">(Review Count)</span>
+              </div>
+              <p class="price">Rs. {{ course.price }}</p>
+              <button class="btn btn-primary w-100">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+  
+    </div>
+    <footer class="bg-light text-lg-start">
+      <div class="py-4 text-center">
+        <a
+           role="button"
+           class="btn btn-primary btn-lg m-2" data-mdb-ripple-init
+           href="www.google.com"
+           rel="nofollow"
+           target="_blank"
+           >
+          StudyHiveSync
+        </a>
+      </div>      
+      <!-- <hr class="m-0" /> -->
+     
+      <div class="text-center py-4 align-items-center">
+        <p>Follow StudyHiveSync on social media</p>
+        <a href="https://www.youtube.com/@BetWiseStakeIndia" target="_blank" rel="nofollow">
+          <img src="https://cdn-icons-png.flaticon.com/256/2504/2504848.png" alt="YouTube" style="width: 40px; height: 40px;">
+        </a>
+        <a href="https://www.linkedin.com/in/ankit-anshuman-mohapatra-85442a1b8/" target="_blank" rel="nofollow">
+          <img src="https://banner2.cleanpng.com/20181227/ici/kisspng-logo-linkedin-computer-icons-portable-network-grap-1713909854703.webp" alt="LinkedIn" style="width: 40px; height: 40px;">
+        </a>
+        <a href="https://github.com/ankitanshumanmohapatra" target="_blank" rel="nofollow">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 40px; height: 40px;">
+        </a>
+      </div>
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2025 Copyright:
+        <a class="text-dark" href="www.google.com">StudyHiveSync</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>

@@ -1,0 +1,22 @@
+<div class="container-fluid bg-dark text-light py-5">
+    <div class="container py-5">
+      <div class="container text-center">
+        <!-- Thank You Message -->
+        <h1 class="display-4 text-success mb-4">Thank You for Your Purchase!</h1>
+        <p class="lead text-warning mb-5">
+          Your transaction was successful. Below are your transaction details.
+        </p>
+  
+        <!-- Transaction Details -->
+        <div class="transaction-details mb-5">
+          <p><strong>Order ID:</strong> {{ orderId }}</p>
+          <!-- <p><strong>Payment ID:</strong> {{ paymentId }}</p> -->
+        </div>
+  
+        <!-- Access Resources Button -->
+        <button class="btn btn-primary btn-lg" (click)="accessResources()">
+          Access Resources
+        </button>
+      </div>
+    </div>
+  </div>

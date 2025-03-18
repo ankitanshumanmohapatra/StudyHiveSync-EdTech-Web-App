@@ -1,0 +1,87 @@
+<div class="container-fluid bg-dark text-light py-5">
+    <div class="container">
+        <!-- <h1 class="display-4 fw-bold">Explore Courses from StudyHiveSync!</h1> -->
+        <h1 class="custom-heading mb-4">My Profile<span class="aqua-text"> Dashboard</span></h1>
+      <br><br>
+      </div>
+  <div class="container profile-container">
+    <div class="card profile-card">
+        <div class="card-body">
+            <!-- <img src="assets/profile-placeholder.png" class="profile-pic" alt="Profile Picture" /> -->
+            <h3 class="text-light">{{ user?.name }}</h3>
+            <p class="text-light">{{ user?.email }}</p>
+            <p class="text-light">{{ user?.accountType }}</p>
+            <button class="btn btn-warning" (click)="editProfile()">Edit</button>
+        </div>
+    </div>
+  
+    <div class="card profile-card mt-3">
+        <div class="card-body">
+            <h5 class="text-light">Personal Details</h5>
+            <p class="text-light"><strong>Email:</strong> {{ user?.email }}</p>
+            <!-- <p class="text-light"><strong>Date of Birth:</strong> {{ user.dob }}</p> -->
+        </div>
+    </div>
+  
+    <div class="card profile-card mt-3">
+        <div class="card-body">
+            <h5 class="text-light">About</h5>
+            <button class="btn btn-warning" (click)="editProfile()">Edit</button>
+        </div>
+    </div>
+  
+    <div class="card delete-card mt-3">
+        <div class="card-body text-center">
+            <p class="text-danger">Deleting your account is permanent and will remove all associated data.</p>
+            <button class="btn btn-danger" (click)="deleteAccount()">Delete Account</button>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Edit Profile Modal -->
+  <div *ngIf="isEditing" class="edit-modal">
+    <div class="modal-content">
+        <h3 class="text-light">Edit Profile</h3>
+        <input type="text" id="name" name="name" [(ngModel)]="editName" placeholder="First Name" class="form-control mb-2" />
+        <input type="email" id="email" name="email" [(ngModel)]="editEmail" placeholder="Email" class="form-control mb-2" />
+        <button class="btn btn-success" (click)="saveProfile()">Save</button>
+        <button class="btn btn-secondary" (click)="isEditing = false">Cancel</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+      <a
+         role="button"
+         class="btn btn-primary btn-lg m-2" data-mdb-ripple-init
+         href="www.google.com"
+         rel="nofollow"
+         target="_blank"
+         >
+        StudyHiveSync
+      </a>
+    </div>      
+    <!-- <hr class="m-0" /> -->
+   
+    <div class="text-center py-4 align-items-center">
+      <p>Follow StudyHiveSync on social media</p>
+      <a href="https://www.youtube.com/@BetWiseStakeIndia" target="_blank" rel="nofollow">
+        <img src="https://cdn-icons-png.flaticon.com/256/2504/2504848.png" alt="YouTube" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://www.linkedin.com/in/ankit-anshuman-mohapatra-85442a1b8/" target="_blank" rel="nofollow">
+        <img src="https://banner2.cleanpng.com/20181227/ici/kisspng-logo-linkedin-computer-icons-portable-network-grap-1713909854703.webp" alt="LinkedIn" style="width: 40px; height: 40px;">
+      </a>
+      <a href="https://github.com/ankitanshumanmohapatra" target="_blank" rel="nofollow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width: 40px; height: 40px;">
+      </a>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-dark" href="www.google.com">StudyHiveSync</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  </div>
